@@ -5,6 +5,199 @@
 	(uuid "55057a09-63e5-4de8-aa16-d4a5cd08f21d")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030"
+				(at 5.08 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*TC2030*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_0"
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TCK" output line)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TMS" bidirectional line)
+				)
+				(pin input line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "SWO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TDO" input line)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -3068,6 +3261,10 @@
 		(uuid "21fdae4e-8393-45cf-8f4f-e242920919ea")
 	)
 	(no_connect
+		(at 234.95 115.57)
+		(uuid "2e6b4dba-878f-49e5-8e09-93fb9d8e863f")
+	)
+	(no_connect
 		(at 224.79 52.07)
 		(uuid "419a0ca4-afed-478c-b9cc-ef04aa4c4698")
 	)
@@ -3280,6 +3477,16 @@
 			(type default)
 		)
 		(uuid "49f9ffa6-49d3-4537-ae9c-9b83145c9cf2")
+	)
+	(polyline
+		(pts
+			(xy 72.39 67.31) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f390348-cf24-4df5-a815-275128e6b395")
 	)
 	(wire
 		(pts
@@ -3621,6 +3828,16 @@
 		)
 		(uuid "c373746e-e715-4feb-a129-e232689a008f")
 	)
+	(polyline
+		(pts
+			(xy 52.07 95.25) (xy 52.07 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc06d50-4f64-4f02-b6c9-1fcec1eee13c")
+	)
 	(wire
 		(pts
 			(xy 161.29 44.45) (xy 161.29 45.72)
@@ -3713,7 +3930,29 @@
 	)
 	(global_label "D+"
 		(shape passive)
-		(at 181.61 96.52 0)
+		(at 153.67 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0cb60b53-8222-491b-8e81-ed0efa1f731b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.9537 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NRST"
+		(shape output)
+		(at 234.95 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3721,9 +3960,9 @@
 			)
 			(justify left)
 		)
-		(uuid "0cb60b53-8222-491b-8e81-ed0efa1f731b")
+		(uuid "0e41e66f-d571-4d8b-9aa8-70d2e01c5225")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.3263 96.52 0)
+			(at 242.7128 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,6 +3994,50 @@
 			)
 		)
 	)
+	(global_label "SWCLK"
+		(shape output)
+		(at 234.95 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "228dac73-f031-4e29-aff8-0cbd276f0825")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.1642 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SWDIO"
+		(shape bidirectional)
+		(at 234.95 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "28563265-c19b-4b06-9e4c-6c1af2ab8d94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 244.9127 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D-"
 		(shape bidirectional)
 		(at 82.55 95.25 0)
@@ -3768,6 +4051,50 @@
 		(uuid "2a457610-caf1-4b4a-a207-0912adde5117")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 89.4889 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX3"
+		(shape input)
+		(at 80.01 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d69eb7b-8613-4a69-8faa-0f5e39886841")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX8"
+		(shape input)
+		(at 80.01 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3440502d-5b6c-418e-a79a-c2fb6057d66e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3801,22 +4128,44 @@
 	)
 	(global_label "D-"
 		(shape passive)
-		(at 153.67 96.52 180)
+		(at 181.61 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "41a6fe8f-ee43-4b37-9345-16bec7e1d9fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.9537 96.52 0)
+			(at 186.3263 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX1"
+		(shape input)
+		(at 80.01 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4af5483b-aee4-48c5-89a6-13d8e2e816de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3834,6 +4183,28 @@
 		(uuid "6e05daa9-2a75-465a-89d8-08bc7a12b70d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.5133 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX2"
+		(shape input)
+		(at 80.01 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "834588fd-c64f-4e25-bde7-2dc776821682")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3931,6 +4302,50 @@
 			)
 		)
 	)
+	(global_label "MUX9"
+		(shape input)
+		(at 80.01 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0e588ec-0e38-4809-b3f0-b8664ade9982")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX4"
+		(shape input)
+		(at 80.01 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db62db1d-72f3-4a0f-b239-5b45dfb72a7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BOOT0"
 		(shape input)
 		(at 44.45 72.39 180)
@@ -3966,6 +4381,72 @@
 		(uuid "dde89428-425e-4c7a-8ddd-53143e706fb2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 90.3128 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX5"
+		(shape input)
+		(at 80.01 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df7410a6-c9d0-4697-8c7d-f60478f041f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX7"
+		(shape input)
+		(at 44.45 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e62c0a32-3dc9-4e04-943e-ce2d23d46e2e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.2639 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX6"
+		(shape input)
+		(at 80.01 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f783c9aa-b944-4cfc-b281-fba13b8d65e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1961 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,12 +5140,12 @@
 	(symbol
 		(lib_id "Switch:SW_SPST")
 		(at 50.8 160.02 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2e7a2aab-ddc4-4362-8139-510258ffab4b")
 		(property "Reference" "BOOT0"
 			(at 50.8 153.67 0)
@@ -4682,7 +5163,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-various:SW_SPST_SKQG_WithStem"
+		(property "Footprint" "PCM_marbastlib-various:SW_MSK12C02-HB"
 			(at 50.8 160.02 0)
 			(effects
 				(font
@@ -6484,6 +6965,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 224.79 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11f31f3-5281-4fe9-acf2-5b354c28fd68")
+		(property "Reference" "#PWR0262"
+			(at 224.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 224.79 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 224.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e6935ca-48de-4ce7-8365-f3e3f6547953")
+		)
+		(instances
+			(project "65HE_V2_PCB"
+				(path "/55057a09-63e5-4de8-aa16-d4a5cd08f21d"
+					(reference "#PWR0262")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 123.19 44.45 0)
 		(unit 1)
@@ -6544,6 +7092,88 @@
 			(project ""
 				(path "/55057a09-63e5-4de8-aa16-d4a5cd08f21d"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030")
+		(at 227.33 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c615d6b0-e7a8-4218-aa87-2a7c30364736")
+		(property "Reference" "J2"
+			(at 220.98 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TC2030"
+			(at 220.98 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+			(at 227.33 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+			(at 227.33 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
+			(at 227.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "b1c9c666-85b1-474f-b6af-15edf97e5e3e")
+		)
+		(pin "3"
+			(uuid "6a34f581-22ec-4862-b9db-48b377d952cc")
+		)
+		(pin "1"
+			(uuid "65528525-8e55-4c33-bb8e-416e0698587c")
+		)
+		(pin "5"
+			(uuid "8dee22e2-7673-488f-a514-030f69374ca1")
+		)
+		(pin "4"
+			(uuid "02d92e7b-fbd3-4f7f-a71b-2b9dd315033b")
+		)
+		(pin "2"
+			(uuid "cad1ce3d-ea66-48b6-a8b7-3cef74e68317")
+		)
+		(instances
+			(project ""
+				(path "/55057a09-63e5-4de8-aa16-d4a5cd08f21d"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -7225,6 +7855,72 @@
 			(project "65HE_V2_PCB"
 				(path "/55057a09-63e5-4de8-aa16-d4a5cd08f21d"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 224.79 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edbe1274-1e39-402b-9c2e-d07ea0875476")
+		(property "Reference" "#PWR0261"
+			(at 224.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 224.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 224.79 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f625a20a-0137-463f-b77c-ebfe48460419")
+		)
+		(instances
+			(project "65HE_V2_PCB"
+				(path "/55057a09-63e5-4de8-aa16-d4a5cd08f21d"
+					(reference "#PWR0261")
 					(unit 1)
 				)
 			)
